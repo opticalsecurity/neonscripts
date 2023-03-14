@@ -2,7 +2,7 @@ sudo add-apt-repository -y ppa:apt-fast/stable
 sudo apt-get -y update 
 sudo apt-get install -y apt-fast
 sudo apt-get install -y preload
-systemctl enable --now preload
+sudo systemctl enable --now preload
 echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list
 wget -qO - https://cdn.starnode.us/archivos_xanmod/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add -
 sudo apt update && sudo apt install linux-xanmod-rt-x64v3
